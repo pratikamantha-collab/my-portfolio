@@ -8,7 +8,7 @@ foreach ($cat in @("digital_media", "mixed_media", "photography")) {
     foreach ($f in $files) {
         $encoded = [uri]::EscapeUriString($f.Name).Replace("%20", " ")
         $url = "assets/images/$cat/$($f.Name)"
-        $items += "        <div class=`"gallery-item`">"
+        $items += "        <div class=`"gallery-item`" data-tilt>"
         $items += "            <img src=`"$url`" alt=`"$cat art`" loading=`"lazy`">"
         $items += "        </div>"
     }
