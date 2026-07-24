@@ -2,7 +2,7 @@ $base = "C:\Users\kumar\.gemini\antigravity\scratch\portfolio_site"
 foreach ($cat in @("digital_media", "mixed_media", "photography")) {
     $dir = "$base\assets\images\$cat"
     $htmlPath = "$base\$cat.html"
-    $files = Get-ChildItem -Path $dir -File | Where-Object { $_.Extension -match "\.(png|jpg|jpeg|heic)$" }
+    $files = Get-ChildItem -Path $dir -File | Where-Object { $_.Extension -match "\.(png|jpg|jpeg)$" }
     
     $items = @()
     foreach ($f in $files) {
