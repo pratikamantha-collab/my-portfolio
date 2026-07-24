@@ -1,16 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Inject VanillaTilt
-    const tiltScript = document.createElement('script');
-    tiltScript.src = "https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js";
-    tiltScript.onload = () => {
-        VanillaTilt.init(document.querySelectorAll("[data-tilt]"), {
-            max: 15,
-            speed: 400,
-            glare: true,
-            "max-glare": 0.2,
-        });
-    };
-    document.body.appendChild(tiltScript);
+    // VanillaTilt removed as requested.
 
     // Scroll reveal animation
     const fadeElements = document.querySelectorAll('.fade-in');
